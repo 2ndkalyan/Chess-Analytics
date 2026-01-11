@@ -1,0 +1,12 @@
+# version: 2 
+
+# semantic_models:
+#   - name: game_data
+#     description: |
+#       Maximum_rating
+#     model: ref('agg_daily_game_analysis')
+#     measures:
+#       - name: max_rating
+#         description: The Peak Rating achieved till date.
+#         agg: max
+#         expr: rating
