@@ -10,7 +10,7 @@ with best_win as (
     case 
         when blacks_username = 'kalyan_999' and results = '0-1' then whites_rating
     else 0 end) as best_win_black
-    from  "DBT_CHESS_ANALYTICS_STG".stg_game_analysis  
+    from  {{ref("stg_game_analysis")}}  
 )select * from best_win
 
 

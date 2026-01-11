@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: time_spine_daily
+    description: A time spine with one row per day
+    time_spine:
+      standard_granularity_column: date_day
+
+    columns:
+      - name: date_day
+        description: Base date column
+        granularity: day

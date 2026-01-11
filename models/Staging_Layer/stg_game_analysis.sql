@@ -42,6 +42,6 @@ rules,
 (white->>'result')::text as whites_result,
 (black->>'result')::text as blacks_result,
 eco
-FROM raw_chess_com_games
+FROM {{source('raw','chess_com_games')}}
 )
 select * FROM games

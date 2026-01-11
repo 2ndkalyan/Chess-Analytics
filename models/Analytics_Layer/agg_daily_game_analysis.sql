@@ -45,7 +45,7 @@ WITH games AS (
         when blacks_username = 'kalyan_999'  then  whites_rating
     else 0 end) as Opponent_Rating,
     count(*) as total_games
-  FROM "DBT_CHESS_ANALYTICS_STG".stg_game_analysis 
+  FROM {{ref('stg_game_analysis')}}
   WHERE rated = 'true'
   GROUP BY game_date, time_class
   order by game_date desc
