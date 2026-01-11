@@ -40,3 +40,8 @@ models:
     # Applies to all files under models/example/
     Raw_Layer:
       +materialized: table
+
+seeds:
+  ChessAnalysis:
+    +schema: jaffle_shop 
+
