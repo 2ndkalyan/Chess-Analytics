@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: time_spine_daily
-    description: A time spine with one row per day
+    description: A time spine with one row per day this is used to calculate all dates regardless of data absence
     time_spine:
       standard_granularity_column: date_day
 
